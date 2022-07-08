@@ -1,0 +1,48 @@
+.btn {
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    padding: 20px 38px;
+    border-radius: 90px;
+
+    font-family: $lato;
+    font-weight: $regular;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn--color-pink-fill {
+    background: linear-gradient(269.48deg, #F09FE0 2.9%, #EA5DA0 109.39%);
+    box-shadow: 0px 4px 12px rgba(120, 98, 163, 0.31);
+    color: white;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 98%;
+        height: 90%;
+        border-radius: 90px;
+
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        border: 1px solid white;
+
+        opacity: 0;
+        transition: opacity .2s;
+    }
+
+    &:hover::before {
+        transition: .2s;
+        opacity: 1;
+    }
+}
+
+.btn--size-normal {
+    max-width: 342px;
+}
