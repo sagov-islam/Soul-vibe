@@ -557,12 +557,128 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .reviews h2 {
   max-width: 488px;
+}
+.reviews__slider {
+  margin-top: 50px;
+  width: 100%;
+}
+.reviews__slider-item {
+  padding: 0px 15px 0 15px;
+  background-color: inherit;
+}
+.reviews__slider-item-content {
+  border-radius: 30px;
+  height: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+.reviews__slider-item-content.img-allWidth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+.reviews__slider-item-content.img-allWidth img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.reviews__slider-item-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+.reviews__slider-item-img {
+  margin-right: 26px;
+}
+.reviews__slider-item-img img {
+  width: 240px;
+  height: 240px;
+  border-radius: 30px;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.slick-list {
+  height: 350px;
+}
+
+.slick-prev {
+  left: -35px;
+}
+.slick-prev::after {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  top: 9px !important;
+}
+
+.slick-next {
+  right: -35px;
+}
+
+.slick-arrow {
+  border: 2px solid #A5A5A5;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  z-index: 50;
+}
+.slick-arrow::before {
+  display: none;
+}
+.slick-arrow::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  background-image: url(../images/arrow-1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.slick-arrow:hover {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background-color: rgb(245, 245, 245);
 }
 
 .block-container {

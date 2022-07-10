@@ -18,7 +18,7 @@ $(() => {
                 $(button).addClass('accordion-opened');
 
                 $(accordion1Items[index]).animate({
-                    height: $(accordion1Items[index]).height() + ($(accordion1Contents[index]).outerHeight(true) + 30)
+                    height: $(accordion1Items[index]).height() + ($(accordion1Contents[index]).outerHeight(true) + 31)
                 }, 200)
 
                
@@ -42,6 +42,24 @@ $(() => {
                 
             }
         })
+    })
+
+
+    $('.reviews__slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                
+              }
+            },
+        ]
     })
 
 })
