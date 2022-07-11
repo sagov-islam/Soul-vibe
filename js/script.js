@@ -44,6 +44,33 @@ $(() => {
         })
     })
 
+    const accordion2Btns = $('.accordion-2__button');
+    const accordion2Items = $('.accordion-2__item');
+    const accordion2Contents = $('.accordion-2__content');
+    const accordion2Span = $('.accordion-2__button-plus .y');
+
+
+    $(accordion2Btns).each((index, button) => {
+
+        $(button).on('click', () => {
+            const height = accordion2Contents[index].scrollHeight;
+
+            if ($(accordion2Items[index]).hasClass('closed')) {
+
+                $(accordion2Items[index]).removeClass('closed');
+                $(accordion2Contents[index]).animate({ height: height + 20}, 100);
+                $(accordion2Span[index]).animate({ height: '0%' }, 100)
+
+            } else {
+
+                $(accordion2Items[index]).addClass('closed');
+                $(accordion2Contents[index]).animate({ height: 0}, 100)
+                $(accordion2Span[index]).animate({ height: '100%' }, 100)
+
+            }
+            
+        })
+    })
 
     $('.reviews__slider').slick({
         infinite: true,
