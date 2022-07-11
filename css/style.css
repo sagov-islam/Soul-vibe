@@ -721,7 +721,7 @@ html, body {
 .author__images {
   position: relative;
 }
-.author__images img {
+.author__images-photo {
   border-radius: 50%;
   position: absolute;
   left: 71px;
@@ -730,7 +730,7 @@ html, body {
   -ms-transform: translate(0px, -50%);
   transform: translate(0px, -50%);
 }
-.author__images svg {
+.author__images-figure {
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -929,6 +929,10 @@ html, body {
   left: 0;
   position: absolute;
 }
+.answers__images .image {
+  position: absolute;
+  left: 6.5%;
+}
 .answers .accordion-2 {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -1080,6 +1084,10 @@ html, body {
   left: 0%;
   top: -13%;
 }
+.images-1 .image {
+  position: absolute;
+  left: 10%;
+}
 
 .images-2 img, .images-2 svg {
   position: absolute;
@@ -1136,28 +1144,6 @@ html, body {
 
 .color-black {
   color: black;
-}
-
-@-webkit-keyframes rotation {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotation {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.rotate {
-  -webkit-animation: rotation 35s;
-  animation: rotation 35s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
 }
 
 .accordion-1 {
@@ -1310,6 +1296,28 @@ html, body {
   overflow: hidden;
   height: 0;
   padding: 0 20px;
+}
+
+@-webkit-keyframes rotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  -webkit-animation: rotation 35s;
+  animation: rotation 35s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .btn {
