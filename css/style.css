@@ -938,6 +938,9 @@ html, body {
   align-self: flex-end;
 }
 
+.answers {
+  margin-top: 120px;
+}
 .answers__content {
   margin-top: 55px;
   display: -webkit-box;
