@@ -1471,6 +1471,7 @@ html, body {
   min-height: 30px;
   max-height: 30px;
   max-width: 30px;
+  background-color: inherit;
   position: relative;
 }
 .btn-close::after {
@@ -1916,6 +1917,7 @@ html, body {
   align-items: center;
 }
 .modal__content {
+  margin: 0 15px;
   position: absolute;
   z-index: 200;
   max-width: 404px;
