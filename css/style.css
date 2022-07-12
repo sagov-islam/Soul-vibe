@@ -2681,6 +2681,10 @@ html, body {
   .header__btns > .instagram-btn, .header__btns > .user-btn {
     display: none;
   }
+  .accordion-1__text-column {
+    gap: 0px;
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 400px) {
   .author__name {
