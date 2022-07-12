@@ -89,4 +89,37 @@ $(() => {
         ]
     })
 
+
+    // Modal ---->
+    $('button[id^=MODAL]').on('click', function() {
+        const modalId = $(this).attr('id');
+        $(`.modal#${modalId}`).addClass('modal-open');
+    })
+
+    $('.modal .btn-close').on('click', function() {
+        $(this).parent().parent().parent().removeClass('modal-open')
+    })
+
+    $('.modal').on('mousedown', (event) => {
+        if ( ! event.target.classList.contains('modal')) return
+        $(event.target).removeClass('modal-open');
+
+    })
+
+    // Burger menu ---->
+
+    $('.menu__burger').on('click', function() {
+        const parent = $(this).parent();
+
+        if ($(parent).hasClass('menu-closed')) {
+            $(parent).removeClass('menu-closed');
+            $(parent).addClass('menu-active');
+        } else {
+            $(parent).addClass('menu-closed');
+            $(parent).removeClass('menu-active');
+        }
+        
+    })
+    
+
 })
