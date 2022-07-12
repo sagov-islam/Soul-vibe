@@ -664,6 +664,10 @@ html, body {
   width: 15px;
 }
 
+.slick-dots li button:before {
+  display: none;
+}
+
 .slick-active button {
   background-color: #BD9FD3 !important;
 }
@@ -1343,28 +1347,6 @@ html, body {
   padding: 0 20px;
 }
 
-@-webkit-keyframes rotation {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotation {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.rotate {
-  -webkit-animation: rotation 35s;
-  animation: rotation 35s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
 .btn {
   cursor: pointer;
   width: 100%;
@@ -1521,6 +1503,28 @@ html, body {
 }
 .btn-desc-container a {
   margin-bottom: 8px;
+}
+
+@-webkit-keyframes rotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  -webkit-animation: rotation 35s;
+  animation: rotation 35s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .container {
