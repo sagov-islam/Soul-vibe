@@ -602,7 +602,7 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .reviews__slider-item-content.img-allWidth {
   display: -webkit-box;
@@ -1347,6 +1347,28 @@ html, body {
   padding: 0 20px;
 }
 
+@-webkit-keyframes rotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  -webkit-animation: rotation 35s;
+  animation: rotation 35s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
 .btn {
   cursor: pointer;
   width: 100%;
@@ -1503,28 +1525,6 @@ html, body {
 }
 .btn-desc-container a {
   margin-bottom: 8px;
-}
-
-@-webkit-keyframes rotation {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotation {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.rotate {
-  -webkit-animation: rotation 35s;
-  animation: rotation 35s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
 }
 
 .container {
