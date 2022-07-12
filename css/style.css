@@ -2760,7 +2760,10 @@ html, body {
     top: -27.8%;
   }
   .for-whom__desc {
-    margin-bottom: -6px;
+    margin-bottom: 15px;
+  }
+  .for-whom .block-container__content {
+    margin-top: 14px;
   }
   .accordion-2 {
     margin-top: 30px;
